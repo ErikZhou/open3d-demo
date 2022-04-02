@@ -15,9 +15,9 @@ min_points: 定义形成群集所需的最小点数。
 
 import open3d as o3d
 import numpy as np
-from open3d.open3d_pybind.geometry import PointCloud
+#from open3d.open3d_pybind.geometry import PointCloud
 import matplotlib.pyplot as plt
-
+PointCloud = o3d.geometry.PointCloud()
 pcd:PointCloud = o3d.io.read_point_cloud("../TestData/fragment.ply")
 
 with o3d.utility.VerbosityContextManager(o3d.utility.VerbosityLevel.Debug) as cm:

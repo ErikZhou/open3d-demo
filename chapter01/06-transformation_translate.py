@@ -1,7 +1,10 @@
 import open3d as o3d
-from open3d.open3d_pybind.geometry import TriangleMesh
+#from open3d.open3d_pybind.geometry import TriangleMesh
+TriangleMesh = o3d.geometry.PointCloud()
 import numpy as np
 import copy
+
+
 
 # 创建坐标系
 mesh  = o3d.geometry.TriangleMesh.create_coordinate_frame()
