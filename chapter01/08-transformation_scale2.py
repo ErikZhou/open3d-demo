@@ -2,9 +2,12 @@
 
 """
 
-from open3d.open3d_pybind.geometry import Geometry3D
+#from open3d.open3d_pybind.geometry import Geometry3D
+
 import open3d as o3d
 import copy
+
+Geometry3D = o3d.geometry.PointCloud()
 
 mesh = o3d.geometry.TriangleMesh.create_coordinate_frame()
 mesh_s: Geometry3D = copy.deepcopy(mesh).translate((2, 1, 0))
