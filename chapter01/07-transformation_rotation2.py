@@ -13,7 +13,9 @@ Open3D的几何变换也可以通过旋转方法来旋转。
 """
 
 import open3d as o3d
-from open3d.open3d_pybind.geometry import Geometry3D
+#from open3d.open3d_pybind.geometry import Geometry3D
+Geometry3D = o3d.geometry.PointCloud()
+
 import numpy as np
 import copy
 
