@@ -1,6 +1,10 @@
 import open3d as o3d
 from common import open3d_tutorial as o3dtut
-from open3d.open3d_pybind.geometry import PointCloud, TriangleMesh, LineSet
+#from open3d.open3d_pybind.geometry import PointCloud, TriangleMesh, LineSet
+PointCloud = o3d.geometry.PointCloud()
+TriangleMesh = o3d.geometry.PointCloud()
+LineSet = o3d.geometry.PointCloud()
+
 
 # 凸壳 ----------------------------------------------------- Convex hull
 mesh: TriangleMesh = o3dtut.get_bunny_mesh()
