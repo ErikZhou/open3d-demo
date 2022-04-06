@@ -8,7 +8,9 @@ They usually produce less tight alignment results and are used as initialization
 import open3d as o3d
 import numpy as np
 import copy
-from open3d.open3d_pybind.geometry import PointCloud
+#from open3d.open3d_pybind.geometry import PointCloud
+PointCloud = o3d.geometry.PointCloud()
+
 
 def draw_registration_result(source, target, transformation):
     source_temp = copy.deepcopy(source)
