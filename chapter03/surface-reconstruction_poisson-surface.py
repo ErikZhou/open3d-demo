@@ -15,9 +15,14 @@ import numpy as np
 import matplotlib.pyplot as plt
 from common import open3d_tutorial as o3dtut
 
+'''
 mesh = o3dtut.get_bunny_mesh()
 pcd = mesh.sample_points_poisson_disk(3000)
 #pcd = o3dtut.get_eagle_pcd()
+'''
+
+pcd = o3d.io.read_point_cloud("data3_.ply")
+#pcd.estimate_normals()
 
 
 print(pcd)

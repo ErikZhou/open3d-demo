@@ -10,11 +10,18 @@ This algorithm assumes that the PointCloud has normals.
 
 import open3d as o3d
 import numpy as np
+import sys
 from common import open3d_tutorial as o3dtut
 
+'''
 gt_mesh = o3dtut.get_bunny_mesh()
 gt_mesh.compute_vertex_normals()
 pcd = gt_mesh.sample_points_poisson_disk(3000)
+'''
+
+pcd = o3d.io.read_point_cloud("data3_.ply")
+#pcd.estimate_normals()
+
 o3d.visualization.draw_geometries([pcd], point_show_normal=True)
 
 radii = [0.005, 0.01, 0.02, 0.04]
